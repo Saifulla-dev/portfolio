@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- box icons -->
+ <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <!-- <a href="#P">Portfolio</a> -->
+            <a href="#contact">Contact</a>
+                    <div id="darkmood-icon"><i class='bx  bx-moon'></i> </div>
+        </nav>
+
+
+            <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+
+    </header>
+
+
+    <!-- home-section-design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>SAIFULLA R</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor labore minus dicta vitae dolorum aliquam eos? Officia.</p>
+            
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/saifullar" target="_blank" onclick="this.classList.add('visited')" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="sm"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:saifullar125@gmail.com" onclick="this.classList.add('visited')" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                 <a href="sm"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <a href="files/SaifullaR_Resume.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="p-container">
+            <div class="p-box">
+                <div class="p" style="--i:0;">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="p" style="--i:1;">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Java Developer</h3>
+                </div>
+                <div class="p" style="--i:2;">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>SQL Developer</h3>
+                </div>
+                <div class="p" style="--i:3;">
+                    <i id="special" class="fa-solid fa-code"></i>
+                    <h3 id="specific">Full Stack Developer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="home-img">
+                <img src="D:\Portfolio1\imgs\1000069713-removebg-preview.png" class="home-photo">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section design -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="D:\Portfolio1\imgs\2nd-img.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Hi, I'm Here To Help Your Next Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nisi, porro in dolore repellendus est, facere perspiciatis laborum ducimus iusto autem architecto, veniam corrupti similique? Ut ad iusto, provident molestias pariatur nisi porro tempora quibusdam velit nostrum, quasi libero saepe?</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </section>
+
+
+        <!-- services section desgin -->
+         <section class="services" id="services">
+            <h2 class="heading">My<span> Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Full Stack Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Java Development </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
+                    <a href="#" class="btn">Read More</a>  
+                </div> 
+            </div>
+         </section>
+
+         <!-- contact section design  -->
+          <section class="contact" id="contact">
+            <h2 class="heading">Contact<span>Me!</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+          </section>
+
+          <!-- footer design -->
+
+          <footer class="footer">
+            <div class="footer-text">
+                <p>
+                    copyright &copy; 2023 by Jspiders | All Right Reserved.
+                </p>
+            </div>
+            <div class="footer-iconTop"><a href="#home"><i class="fa-solid fa-arrow-up"></i></a></div>
+          </footer>
+
+
+<!-- scrool reveal -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script src="./javaScript.js"></script>
+</body>
+</html>
