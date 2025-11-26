@@ -1,3 +1,15 @@
+// menu icon navbar
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick =() => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+
+
 // scroll section active link
 
 let sections = document.querySelectorAll('section');
@@ -22,7 +34,12 @@ if(top >= offset && top < offset + height) {
 let header = document.querySelector('.header');
 
 header.classList.toggle('sticky',window.scrollY > 20);
-}
+
+//remove menu icon navbar when click navbar link (scroll)
+     menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
+};
 
 let darkIcon = document.querySelector("#darkmood-icon i");
 
@@ -59,6 +76,34 @@ ScrollReveal().reveal('.home-img img, .services-container, .contact form', { ori
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
+const readMoreBtn = document.getElementById("readMoreBtn");
+const moreText = document.querySelector(".more-text");
+
+readMoreBtn.addEventListener("click", () => {
+    if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        readMoreBtn.textContent = "Read More";
+    } else {
+        moreText.style.display = "block";
+        readMoreBtn.textContent = "Read Less";
+    }
+});
 
 
+    const serviceButtons = document.querySelectorAll(".read-more-service");
+const extraTexts = document.querySelectorAll(".more-services-text");
+
+serviceButtons.forEach((btn, index) => {
+    btn.onclick = function () {
+        const text = extraTexts[index];
+
+        if (text.style.display === "block") {
+            text.style.display = "none";
+            btn.textContent = "Read More";
+        } else {
+            text.style.display = "block";
+            btn.textContent = "Read Less";
+        }
+    };
+});
 
