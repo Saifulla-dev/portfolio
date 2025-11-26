@@ -19,16 +19,14 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="#about" >About</a>
             <a href="#services">Services</a>
             <!-- <a href="#P">Portfolio</a> -->
             <a href="#contact">Contact</a>
-                    <div id="darkmood-icon"><i class='bx  bx-moon'></i> </div>
+            
         </nav>
-
-
-            <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
-
+            <div id="darkmood-icon"><i class='bx  bx-moon'></i> </div>
+            <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
 
@@ -37,7 +35,7 @@
         <div class="home-content">
             <h3>Hello, I am</h3>
             <h1>SAIFULLA R</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolor labore minus dicta vitae dolorum aliquam eos? Officia.</p>
+            <p>I’m a Full Stack Java Developer who builds fast, scalable, and clean digital solutions by turning complex ideas into smooth, high-performance applications.</p>
             
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/saifullar" target="_blank" onclick="this.classList.add('visited')" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -55,11 +53,13 @@
                     <h3>Web Developer</h3>
                 </div>
                 <div class="p" style="--i:1;">
-                    <i class="fa-solid fa-code"></i>
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon">
+
                     <h3>Java Developer</h3>
                 </div>
                 <div class="p" style="--i:2;">
-                    <i class="fa-solid fa-code"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon">
+
                     <h3>SQL Developer</h3>
                 </div>
                 <div class="p" style="--i:3;">
@@ -72,7 +72,7 @@
             <div class="overlay"></div>
 
             <div class="home-img">
-                <img src="imgs/1000069713-removebg-preview.png" class="home-photo">
+                <img src="D:\Portfolio1\imgs\1000069713-removebg-preview.png" class="home-photo">
             </div>
         </div>
     </section>
@@ -81,15 +81,22 @@
     <!-- about section design -->
         <section class="about" id="about">
             <div class="about-img">
-                <img src="imgs/2nd-img.png" alt="">
+                <img src="D:\Portfolio1\imgs\2nd-img.png" alt="">
             </div>
 
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
                 <h3>Hi, I'm Here To Help Your Next Project</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nisi, porro in dolore repellendus est, facere perspiciatis laborum ducimus iusto autem architecto, veniam corrupti similique? Ut ad iusto, provident molestias pariatur nisi porro tempora quibusdam velit nostrum, quasi libero saepe?</p>
-                <a href="" class="btn">Read More</a>
+                <p class="about-text">I’m a Full Stack Java Developer proficient in Java, HTML, CSS, JavaScript, SQL, and Spring Boot with experience
+developing an e-commerce project. Strong problem-solver with good DBMS knowledge and teamwork skills.
+Hands-on with VS Code, Eclipse, Git, and MySQL Workbench.</p>
+                 <p class="more-text" id="moreText">
+  who enjoys building clean, scalable applications and turning complex ideas into smooth, user-friendly experiences. I focus on writing efficient code, creating practical solutions, and delivering projects that feel simple, fast, and reliable.
+</p>
+               <button class="btn" id="readMoreBtn">Read More</button>
             </div>
+           
+
         </section>
 
 
@@ -98,22 +105,37 @@
             <h2 class="heading">My<span> Services</span></h2>
             <div class="services-container">
                 <div class="services-box">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
-                    <a href="#" class="btn">Read More</a>
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="sql-icon">
+
+                    <h3>Java Development</h3>
+                    <p>I develop scalable Java applications with clean structure, strong logic, and reliable backend performance, ensuring smooth functionality and professional-quality results every time.</p>
+                    <p class="more-services-text">
+    I specialize in building strong, maintainable Java applications using clean code, OOP principles, and well-structured architecture. I work with Spring Boot, REST APIs, multithreading, exception handling, file handling, and enterprise-level backend design. My focus is on performance, security, scalability, and writing logic that works flawlessly in the real world.
+</p>
+
+                     <a href="javascript:void(0)" class="btn read-more-service">Read More</a>
                 </div>
                 <div class="services-box">
                     <i class="fa-solid fa-code"></i>
                     <h3>Full Stack Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <p>I build complete end-to-end applications with modern UI, secure backend systems, and optimized workflows, creating seamless digital experiences across all layers of development.</p>
+                    <p class="more-services-text">
+   As a Full Stack Java Developer, I handle both frontend and backend development with equal expertise. I build responsive interfaces using HTML, CSS, JavaScript, and modern UI patterns, while the backend runs on Java, Spring Boot, REST APIs, and SQL databases. I ensure complete integration, smooth performance, and production-level code from end to end.
+    </p>
+
+                     <a href="javascript:void(0)" class="btn read-more-service">Read More</a>
                 </div>
                 <div class="services-box">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Java Development </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut culpa perferendis maiores. Dolor, id ipsa soluta in cum sequi explicabo earum.</p>
-                    <a href="#" class="btn">Read More</a>  
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="sql-icon">
+
+                    <h3>SQL Development </h3>
+                    <p>I create efficient database solutions using optimized SQL queries, structured schemas, and accurate data handling to support fast, stable, and scalable applications, ensuring strong performance and data operations.</p>
+                   <p class="more-services-text">
+    Extra information about this service. You can describe features,
+    tools used, technologies, etc. This text will be hidden by default.
+</p>
+
+                     <a href="javascript:void(0)" class="btn read-more-service">Read More</a>
                 </div> 
             </div>
          </section>
@@ -154,8 +176,3 @@
     <script src="./javaScript.js"></script>
 </body>
 </html>
-
-
-
-
-
